@@ -13,7 +13,7 @@ orders as (
 final as (
 
     select
-        orders.customer_id,
+        orders.customer_id as user_id,
         sum(amount) as total_amount
 
     from payments
